@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table | List</title>
+    <style>
+        table tr td {
+            border: 2px solid green;
+        }
+        table tr th {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Types Of List's</h2>
+    <dd>Un-Ordered List</dd>
+    <br>
+    <dd>Ordered List</dd>
+    <br>
+    <dd>Definition List</dd>
+    <br>
+    <dd>Nested List</dd>
+    <br>
+
+    <h3>Un-Ordered List</h3>
+    <ul type="O">
+        <li>First Un-Ordered line</li>
+        <li>Second Un-Ordered line</li>
+        <li>Third Un-Ordered line</ii>
+            <ul type="o">
+                <li>Sub line 1</li>
+                <li>Sub line 2</li>
+                <li>Sub line 3</li>
+                <li>Sub line 4</li>
+            </ul>
+        <li>Forth Un-Ordered line</li>
+    </ul>
+
+    <h3>Order list</h3>
+    <ol type="I">
+        <li>First Order line</li>
+        <li>Second Order line</li>
+        <ol type="i">
+            <li>Sub line 1</li>
+            <li>Sub line 2</li>
+            <li>Sub line 3</li>
+        </ol>
+        <li>Third Order line</li>
+        <li>Forth Order line</li>
+    </ol>
+
+    <h3>Definition list</h3>
+    <dl>
+        <dt>HTML : 5</dt>
+        <dd>HTML is the standard markup language for Web pages.</dd>
+        <dt>CSS : 3</dt>
+        <dd>CSS is the language we use to style an HTML document.</dd>
+    </dl>
+
+    <h3>Nested List</h3>
+    <ul>FOOD
+        <li style="list-style: none;">---------</li>
+        <li>Vegetarian Food</li>
+            <ol type = "i">
+                <li>Vegetables
+                    <ul>
+                        <li>Lady's Finger</li>
+                        <li>Cabbage</li>
+                        <li>Potato</li>
+                        <li>Spinach</li>
+                        <li>Bottle-Gouard</li>
+                    </ul>
+                </li>
+                <li>Fruits
+                    <ul>
+                        <li>Mango</li>
+                        <li>Apple</li>
+                        <li>Banana</li>
+                        <li>Cheery</li>
+                        <li>Strawberrry</li>
+                    </ul>
+                </li>
+                <li>Salad</li>
+            </ol>
+        <li>Non - Vegetarian Food</li>
+            <ol type = "i">
+                <li>Meat</li>
+                <li>Fish</li>
+            </ol>
+        <li>Vegan Food</li>
+            <ol type = "i">
+                <li>Non - Milk items</li>
+            </ol>
+    </ul>    
+
+    <h2>Table in HTML : 5</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th> Miidle Name</th>
+                <th> Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mike</td>
+                <td>Jason</td>
+                <td>Wheeler</td>
+            </tr>
+            <tr>
+                <td>Larry</td>
+                <td>Jim</td>
+                <td>Hopper</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>David</td>
+                <td>Sinclair</td>
+            </tr>
+            <tr>
+                <td>Will</td>
+                <td>Lucifer</td>
+                <td>Byers</td>
+            </tr>
+            <tr>
+                <td>Dustin</td>
+                <td>James</td>
+                <td>Henderson</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

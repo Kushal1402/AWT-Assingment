@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gray Layout 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 1.2rem;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .head{
+            height: 50px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .logo{
+            height: 50px;
+            width: 10%;
+            background-color: gray;
+            padding-top: 10px;
+            float: left;
+        }
+        .navbar{
+            background-color: gray;
+            float: right;
+            width: 90%;
+            height: 50px;
+            padding-top: 10px;
+        }
+        .header,footer{
+            background-color: gray;
+            height: 100px;
+            margin: 10px 0px;
+            padding-top: 50px;
+            
+        }
+        .area{
+            background-color: gray;
+            height: 110px;
+            padding-top: 40px;
+        }
+        .container{
+            height: 270px;
+            width: 100%;
+        }
+        .box{
+            background-color: gray;
+            height: 260px;
+            width: 30%;
+            margin: 10px 0px;
+            padding-top: 120px;
+        }
+        #b1{
+            float: left;
+        }
+        #b3{
+            float: right;
+        }
+        #b2{
+            float: left;
+            margin:10px 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+
+        <div class="logo">Logo</div>
+        <div class="navbar">Navigation</div>
+    </div>
+    <div class="header">Header</div>
+    <div class="area">Intro Text Area</div>
+    <div class="container">
+        <div class="box" id="b1">Box-1</div>
+        <div class="box" id="b2">Box-2</div>
+        <div class="box" id="b3">Box-3</div>
+    </div>
+    <footer style="height: 150px;">Footer</footer>
+</body>
+</html>

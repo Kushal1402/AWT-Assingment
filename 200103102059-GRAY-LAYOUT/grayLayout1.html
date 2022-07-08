@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gray Layout 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .logo{
+            background-color: gray;
+            height: 50px;
+            font-size: 1.5rem;
+            padding: 5px 10px ;
+            box-sizing: border-box;
+        }
+        .navbar{
+            background-color: gray;
+            height: 40px;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 10px 0px;
+        }
+        .header,footer{
+            background-color: gray;
+            height: 70px;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 10px 0px;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+        .body_side{
+            height: 330px;
+            width: 100%;
+        }
+        .sidebar{
+            background-color: gray;
+            font-size: 1.5rem;
+            width: 25%;
+            float: left;
+            height: 100%;
+            text-align: center;
+            padding-top: 170px;
+            box-sizing: border-box;
+        }
+        .body{
+            background-color: gray;
+            font-size: 1.5rem;
+            float: right;
+            width: 74%;
+            height: 100%;
+           text-align: center;
+           padding-top: 170px;
+           box-sizing: border-box;
+        }
+        img{
+            position:absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="logo">Logo</div>
+        <div class="navbar">Navigation</div>
+        <div class="header">Header</div>
+
+        <div class="body_side">
+            <div class="sidebar">Sidebar</div>
+            <div class="body">body</div>
+        </div>
+
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font-Awesome | Video Background</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            height: 100px;
+        }
+
+        h1{
+            text-align: center;
+            background-color:rgb(225, 222, 222,0.5);
+            padding: 10px;
+            border:2px solid black;
+            border-radius: 12px;
+        }
+
+        .video{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Font Awesome Icons</h1>
+    <div class="row" style="margin-left: 38%;">
+        <i class="fa fa-address-card" style="font-size: 2rem; color: orange"></i>
+        <i class="fa fa-anchor" style="font-size: 2rem; color : lightpink; padding-left: 15px; "></i>
+        <i class="fa fa-car" style="font-size: 2rem; color: green; padding-left: 15px;" ></i>
+        <i class="fa fa-amazon" style="font-size: 2rem; color: yellow; padding-left: 15px;"></i>
+        <i class="fa fa-instagram" style="font-size: 2rem; color: red; padding-left: 15px;"></i>
+        <i class="fa fa-envelope" style="font-size:25px; color:blue; padding-left: 15px;"></i>
+        <i class="fa fa-id-card" style="font-size:30px; color:burlywood; padding-left: 15px;" ></i>
+    </div>
+    <video src="Assets/V1.mp4" autoplay muted loop class="video"></video>
+
+    
+</body>
+</html>

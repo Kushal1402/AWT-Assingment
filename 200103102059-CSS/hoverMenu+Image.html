@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Text | Hover Image</title>
+    <style>
+        .menuul li ul li {
+            display: none;
+        }
+
+        .menuul li:hover ul li {
+            display: block;
+        }
+
+        .menuul li:hover ul li ul li {
+            display: none;
+        }
+
+        .menuul li ul li:hover ul li {
+            display: block;
+        }
+
+        .container{
+            position: relative;
+            width: 600px;
+        }
+
+        img{
+            width: 600px;
+            transition: 1s;
+        }
+        .overlay{
+            border-radius: 80px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            opacity: 0;
+            transition: 1s;
+            background-color: rgba(0, 0, 0, 0.519);
+        }
+        .container:hover .overlay{
+            opacity: 1;
+        }
+        .text{
+            color: white;
+            font-size: 2rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menuul">
+        <li>Item-1
+            <ul>
+                <li>Inner Item-1
+
+                    <ul>
+                        <li>Inner most item-1</li>
+                        <li>Inner most item-2</li>
+                    </ul>
+                </li>
+                <li>Inner Item-2</li>
+            </ul>
+        </li>
+        <li>Item-2
+            <ul>
+                <li>Inner Item of Item-2</li>
+            </ul>
+        </li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+    </ul>
+    <hr>
+    <div class="container">
+        <img src="Assets/learn.png">
+
+        <div class="overlay">
+            <div class="text">This is image of Graduation</div>
+        </div>  
+    </div>
+
+</body>
+</html>

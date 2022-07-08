@@ -1,0 +1,17 @@
+/* CSS style for cssType+Animation.html  */
+.ext {
+    height: 100px;
+    width: 25%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+
+    background-color: lightskyblue ;
+    box-sizing: border-box;
+
+    padding:30px;
+    margin-left: 35%;
+    
+    border : 2px red solid;
+    border-radius: 25px;
+}

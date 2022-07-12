@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+
+    <!-- External JS lLink -->
+    <script src="external.js"></script>
+
+    <!-- Internal JS Link -->
+    <script>
+        function alertinternal(){
+            alert("This is internal Javascript alert");
+        }
+
+        function confirminternal(){
+            confirm("Are you sure..??")
+        }
+
+        function promptinternal(){
+            let first=prompt('Enter your first name');
+            let second=prompt('Enter your second name');
+            alert("Your name is '"+first+" "+second+"'");
+        }
+        
+        function changediv(){
+            let x=document.getElementsByClassName('box');
+            x[0].style.backgroundColor='Pink'
+        }
+        function changebody(){
+            document.body.style.backgroundColor='violet'
+        }
+
+        function divdynamic(){
+            document.getElementsByClassName('box')[0].style.backgroundColor=prompt("Enter color")
+        }
+        function bodydynamic(){
+            document.body.style.backgroundColor=prompt("Enter color")
+        }
+
+        function divcolor(){
+            document.getElementsByClassName('box')[0].style.backgroundColor=document.getElementById('div').value
+        }
+        function bodycolor(){
+            document.body.style.backgroundColor=document.getElementById('body').value
+        }
+    </script>
+    <style>
+        .box{
+            margin: auto;
+            background-color: brown;
+            height: 300px;
+            width: 40%;
+        }
+        .txt{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <br>
+
+    <div class="txt">
+        <button onclick="alert('This is an inline JS alert')">Alert inline</button>
+        <button onclick="confirm('Please choose between OK or Cancel')">Confirm inline</button>
+        <button onclick="prompt('Enter your name in text box')">Prompt inline</button>
+        <br>
+        <br>
+    
+        <button onclick="alertinternal()">Alert internal</button>
+        <button onclick="confirminternal()">Confirm internal</button>
+        <button onclick="promptinternal()">Prompt internal</button>
+        <br>
+        <br>
+
+        <button onclick="alertexternal()">Alert external</button>
+        <button onclick="confirmexternal()">Confirm external</button>
+        <button onclick="promptexternal()">Prompt external</button>
+        <br>
+        <br>
+
+        <button onclick="changediv()">Change Box color</button>
+        <button  onclick="changebody()">Change body color</button>
+        <br>
+        <br>
+
+        <button onclick="divdynamic()">Dynamic Change Box color</button>
+        <button onclick="bodydynamic()">Dynamic Change body color</button>
+        <br>
+        <br>
+
+        <input type="color" id="div" onchange="divcolor()" style="margin-right:120px">
+        <input type="color" id='body'onchange="bodycolor()">
+    </div>
+</body>
+</html>

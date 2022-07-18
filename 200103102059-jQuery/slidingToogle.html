@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Toggle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow")
+            });
+        });
+    </script>
+    <style>
+        #flip{
+            padding: 10px;
+            text-align: center;
+            background-color: blueviolet;
+            border: solid 1px black;
+        }
+        #panel{
+            padding: 50px;
+            background-color: lightskyblue;
+            text-align: center;
+            border: solid 1px red;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="display: flex; justify-content: center">This is box toggle animation using jQuery</h3>
+    <div id="flip">Click here to see the change!!</div>
+    <div id="panel">This is a box...Click up to hide it</div>
+</body>
+</html>

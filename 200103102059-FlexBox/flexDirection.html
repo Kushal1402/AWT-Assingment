@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-direction</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: fantasy;
+        }
+
+        .main-container {
+            border: 5px solid violet;
+            border-radius: 8px;
+            display: inline-flex;
+
+            /*flex-direction: column;  Top to Bottom display */
+            /* flex-direction: row;  Left to Right display*/
+            flex-direction: row-reverse;  /* Right to Left display*/
+            /* flex-direction: column-reverse; Bottom to Top display*/
+        }
+
+        .d {
+            padding: 0.5rem;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .d1 {
+            background-color: aqua;
+        }
+        
+        .d2 {
+            background-color: lightsalmon;
+        }
+        
+        .d3 {
+            background-color: lightpink;
+        }
+        
+        .d4 {
+            background-color: lightseagreen;
+        }
+        
+        .d4 {
+            background-color: gray;
+        }
+        
+        .d5 {
+            background-color: whitesmoke;
+        }
+        
+        .d6 {
+            background-color: darkcyan;
+        }
+        
+        .d7 {
+            background-color: darkorchid;
+        }
+        
+        .d8 {
+            background-color: deepskyblue;
+        }
+        
+        .d9 {
+            background-color: darkorange;
+        }
+        
+        .d10 {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">This is Flex Box's using Display : Flex and Flex-direction's</h1>
+
+    <div class="main-container">
+        <div class="d d1">Box 1</div>
+        <div class="d d2">Box 2</div>
+        <div class="d d3">Box 3</div>
+        <div class="d d4">Box 4</div>
+        <div class="d d5">Box 5</div>
+        <div class="d d6">Box 6</div>
+        <div class="d d7">Box 7</div>
+        <div class="d d8">Box 8</div>
+        <div class="d d9">Box 9</div>
+        <div class="d d10">Box 10</div>
+    </div>
+</body>
+</html>

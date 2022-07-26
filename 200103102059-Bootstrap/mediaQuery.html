@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+			
+        #i1{width:100px;height:100px;background-color:blue;}
+        #i0{ background-color: blue;}
+        
+        @media(min-width:500px)
+        {
+            #i1{width:100px;height:100px;background-color:darkmagenta;}
+            #i0{ background-color: darkmagenta;}
+        }
+        
+        @media(min-width:768px)
+        {
+            #i1{width:100px;height:100px;background-color:hotpink;}
+            #i0{ background-color: pink;}
+        }
+
+        @media(min-width:992px)
+        {
+            #i1{width:100px;height:100px;background-color:lightgreen;}
+            #i0{ background-color: lightgreen;}
+        }
+
+        @media(min-width:1200px)
+        {
+            #i1{width:100px;height:100px;background-color:black;}
+            #i0{ background-color: grey;}
+        }
+        
+        @media(min-width:1400px)
+        {
+            #i1{width:100px;height:100px;background-color:peru;}
+            #i0{ background-color: peru;}
+        }
+
+    </style>
+</head>
+<body>
+    <h3 style="text-align: center;" id="i0">A box down below which changes it's color when width of screen changes</h3 style="text-align: center;">
+    <div id="i1"></div>
+</body>
+</html>
